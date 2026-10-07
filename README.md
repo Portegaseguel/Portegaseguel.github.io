@@ -22,7 +22,7 @@ npm run build
 ```
 
 ## Qué incluye
-- Hero 3D interactivo usando el retrato aprobado de Paulina en una escena con profundidad y movimiento de cursor.
+- Hero 3D interactivo con retrato personalizado, profundidad visual y seguimiento del cursor.
 - Sección de servicios.
 - Carrusel de proyectos comerciales con identidad visual dinámica por proyecto.
 - Proyectos técnicos con enlaces a GitHub.
@@ -30,4 +30,4 @@ npm run build
 - Contacto y navegación responsive.
 
 ## Próximo paso recomendado
-Reemplazar el retrato 2.5D del hero por un modelo GLB riggeado de Paulina (con animación idle y tracking de cabeza/ojos). La arquitectura ya deja el hero 3D separado para hacer ese cambio sin rehacer el sitio.
+Arquitectura preparada para una futura evolución hacia un modelo 3D GLB riggeado con animación idle y tracking de cabeza y ojos.
