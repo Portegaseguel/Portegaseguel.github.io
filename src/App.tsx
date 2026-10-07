@@ -10,6 +10,9 @@ import ElasticCursor from './components/ElasticCursor';
 import { technicalProjects } from './data/projects';
 import AnimatedTitle from './components/AnimatedTitle';
 
+import { FiMail } from 'react-icons/fi';
+import { FaGithub } from 'react-icons/fa';
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
@@ -126,11 +129,11 @@ export default function App() {
 
           <div className="hero-note">
             <span>
-              Diseño con criterio.
+              Entiendo tu necesidad
             </span>
 
             <b>
-              Desarrollo con propósito.
+              y la transformo en resultados.
             </b>
           </div>
 
@@ -156,10 +159,10 @@ export default function App() {
             <div>
 
             <AnimatedTitle>
-              <span>Diseño que funciona.</span>
+              <span>Diseño tu idea.</span>
                 <br />
                 <em>
-                  Código que sostiene.
+                Desarrollo la solución.
                 </em>
             </AnimatedTitle>
 
@@ -312,9 +315,9 @@ export default function App() {
               <div>
 
                 <h2>
-                  Tecnología que{' '}
+                Las herramientas con las que{' '}
                   <em>
-                    se mueve.
+                    trabajo.
                   </em>
                 </h2>
 
@@ -362,25 +365,44 @@ export default function App() {
             </h2>
 
               <p>
-                Diseño y desarrollo soluciones digitales
-                para negocios que necesitan comunicar mejor,
-                vender o profesionalizar su presencia online.
+              Ayudo a marcas, negocios y proyectos a tener sitios web claros, 
+              funcionales y preparados para vender o comunicar mejor.
               </p>
 
             </div>
 
             <div className="contact-links">
 
-              <a href="mailto:frontend.portega@gmail.com">
-                frontend.portega@gmail.com ↗
+              <a
+                href="mailto:frontend.portega@gmail.com"
+                className="contact-link"
+              >
+                <FiMail />
+
+                <span>
+                  frontend.portega@gmail.com
+                </span>
+
+                <span className="contact-arrow">
+                  ↗
+                </span>
               </a>
 
               <a
                 href="https://github.com/Portegaseguel"
                 target="_blank"
                 rel="noreferrer"
+                className="contact-link"
               >
-                github.com/Portegaseguel ↗
+                <FaGithub />
+
+                <span>
+                  Portegaseguel
+                </span>
+
+                <span className="contact-arrow">
+                  ↗
+                </span>
               </a>
 
             </div>

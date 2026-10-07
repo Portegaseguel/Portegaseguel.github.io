@@ -2095,55 +2095,60 @@ button {
 
 
 .contact-links {
-
   display: flex;
-
-
-
   flex-direction: column;
-
   justify-content: center;
-
-
-
-  gap: 20px;
-
 }
 
+.contact-link {
+  display: grid;
+  grid-template-columns: 24px 1fr auto;
+  align-items: center;
+  gap: 0.9rem;
 
-
-.contact-links a {
+  padding: 1.15rem 0;
 
   font-size: 18px;
 
-
+  color: #111315;
+  text-decoration: none;
 
   border-bottom: 1px solid var(--line);
 
-
-
-  padding: 15px 0;
-
-
-
   transition:
-
-    color 0.2s ease,
-
-    padding-left 0.2s ease;
-
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
+.contact-link svg {
+  width: 20px;
+  height: 20px;
 
+  color: #55c7c2;
 
-.contact-links a:hover {
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
 
+.contact-link:hover {
   color: #268e89;
+}
 
+.contact-link:hover svg {
+  color: #b99663;
+  transform: scale(1.08);
+}
 
+.contact-arrow {
+  font-size: 1rem;
 
-  padding-left: 4px;
+  transition:
+    transform 0.25s ease;
+}
 
+.contact-link:hover .contact-arrow {
+  transform: translate(3px, -3px);
 }
 
 
